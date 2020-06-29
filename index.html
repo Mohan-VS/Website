@@ -1,52 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-     <link href="style.css" type="text/css">
      <title>
          Mohan V S
     </title>
-    <link rel="icon" type="image/jpg" href="https://us.123rf.com/450wm/dolva/dolva1511/dolva151100023/48364817-stock-vector-symbol-competition-vs-vector-illustration-.jpg?ver=6"/>
+    <link rel="icon" type="image/jpg" href="Images/VS.jpg"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link href="style.css" type="text/css" rel="stylesheet">
 </head>
+
 <body>
  
   <header id="header">
-	<nav class="navbar navbar-expand-sm navbar-light" style="background-color: #e3f2fd;">
-        <a href="#" class="navbar-brand ">Home</a>
-        <button class="navbar-toggler btn-info" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarMenu">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
+    	<nav class="navbar navbar-expand-md navbar-light" style="background-color: #e3f2fd;">
+	<div class="container">
+            <a href="#" class="navbar-brand"><img src="Images/VS.jpg" width="20%"></a>
+            <div class="navbar-header">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarMenu" style="justify-content: space-around;">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
   </header>
 
     <section id="about" class="about">
-        <div class="jumbotron">
-            <div class="container">
-		<h3 class="text-primary text-center">Mohan Vallivedu Sudhakar</h3>
-                <h4 class="text-info text-center">Software Engineer Enthusiast</h4>
-                </div>
-            </div>
+        <div class="jumbotron container col-md-6">
+                <h2 class="text-info text-center">Software Engineer Enthusiast</h2>
+                <h3 class="text-primary text-center">Mohan Vallivedu Sudhakar</h3>
          </div>
-        <div class="jumbotron container col-sm-5">
+        <div class="jumbotron container col-md-6">
             <h4 class="text-primary text-center">About Me</h4>
             <p>Hello World.</p>
-            <p>I am Mohan, a Master's student in Computer Science at the University of Houston-Clear Lake.</p>
-            <p>At present, I am working as a Software Engineer Intern at Becht, with the focus on full stack development.</p>
-           <p><strong>Tech Stack:</strong>
-                <br> Javascript, Java, C#, SQL, ASP.NET MVC, Microsoft Azure DevOps</p>
+            <p>I am Mohan, a Master's student in Computer Science at the University of Houston-Clear Lake.  [August 2019 - May 2021]</p>
+	    <p>Completed my Bachelors degree from Sri Venkateswara University, Tirupati, India.  [August 2015 - May 2019]</p>
+            <p>I am working as a Software Engineer Intern at Becht, with full stack development.  [May 2020 - Present]</p>
         </div>
+    </section>
+
+    
+    <section id="skills" class="skills">
+            <div class="jumbotron container col-md-6">
+                <h4 class="text-primary text-center">Skills</h4>
+                <p>Programming: Java, C#, SQL</p>
+                <p>Web Dev: HTML/CSS, Javascript, Node.js, Express, ASP.Net MVC, REST API</p>
+                <p>Databases: MS SQL Server, MySql, Oracle</p>
+                <p>Developer tools: Eclipse, Visual Studio 2019, VS Code, Atom</p>
+                <p>Cloud: Microsoft Azure DevOps - Git Control, project management to deployment, CI/CD</p>
+            </div>
     </section>
 
     <section id="contact" class="contact">
@@ -60,12 +80,28 @@
 		</div>
 	</div>
     </section>
-    
 
+    <div>
+        <button onclick="topFunction()" class="btn btn-primary btn-lg back-to-top" id="btnTop" title="Go to top">^</button>
+    </div>
 	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script>
+        mybutton = document.getElementById("btnTop");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction()
+        {
+            if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        function topFunction()
+        {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 
 </body>
 </html>
