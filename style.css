@@ -3,6 +3,10 @@ html{
 }
 body{
     font-family: sans-serif;
+    background-image: url('https://techcrunch.com/wp-content/uploads/2016/06/softwareworld.jpg');
+    backdrop-filter: blur(1);
+    backdrop-filter: contrast(50%);
+    backdrop-filter: brightness(50%);
 }
 #btnTop {
     display: none;
