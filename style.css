@@ -8,7 +8,7 @@ body{
     backdrop-filter: contrast(50%);
     backdrop-filter: brightness(50%);
 }
-li{
+#items{
     font-size: 100%;
     color: black;
     font-display: block;
