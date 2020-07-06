@@ -15,6 +15,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
     <link rel="manifest" href="Images/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0\font-awesome-4.7.0\css\font-awesome.min.css">
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 
@@ -22,7 +24,7 @@
     <header id="header">
     	<nav class="navbar navbar-expand-md navbar-light" style="background-color: #e3f2fd;">
 	    <div class="container">
-            <a href="#" class="navbar-brand"><img src="Images/VS.jpg" width="20%"></a>
+            <a href="#" class="navbar-brand"><img src="Images/logo.png" width="45%"></a>
             <div class="navbar-header">
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,6 +37,9 @@
                     </li>
                     <li class="nav-item">
                         <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Resume</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link">Contact</a>
@@ -59,20 +64,25 @@
             <div class="jumbotron container col-xs-12 col-sm-12 col-md-8 col-lg-10">
                 <h4 class="text-primary text-center">About Me</h4>
                 <p>Hello World.</p>
-                <p>I am Mohan, a Master's student in Computer Science at the University of Houston-Clear Lake.  [August 2019 - May 2021]</p>
-                <p>Completed my Bachelors degree from Sri Venkateswara University, Tirupati, India.  [August 2015 - May 2019]</p>
-                <p style="font-size:larger;"><strong>Experience:</strong></p>
+                <p>I am Mohan, a Master's student in Computer Science at the University of Houston-Clear Lake, TX, USA.<br>[August 2019 - May 2021]</p>
+                <p>Completed my Bachelors degree from Sri Venkateswara University, Tirupati, India.<br>  [August 2015 - May 2019]</p>
+                <p>I am passionate to be a Software Engineer, interested in both Front-end and Back-end development.
+                   <br> Feel free to contact me to find out how I might contribute and add value to your organization. 
+                </p>
+                <p style="font-size:larger;letter-spacing: 2px;display: block;margin-top: 20px;" class="text-primary">Experience:</p>
                 <div>
-                    <label>Software Engineer Intern - BECHT</label>
-                    <label>[May 2020 - Present]</label>
+                    <label style="font-size: large">Software Engineer Intern - BECHT &nbsp;|&nbsp;&nbsp;</label>
+                    <label>Houston, TX, USA &nbsp; [May 2020 - Present]</label>
                 </div>
-                <ul>
-                    <li>Implemented a feature to show a list of projects associated with Becht to the clients in our application "Oracle From Becht"</li>
-                    <li>Designed an API to fetch all the data from Database using C#, ASP.NET MVC Controllers</li>
-                    <li>Designed a User Interface using Kendo UI components.</li>
-                    <li>Utilized JavaScript and jQuery for REST API calls</li>
-                    <li>Working on creating an Excel Add-in to display a good User Interface Form using C#</li>
-                </ul>
+                <div>
+                    <ul>
+                        <li>Implemented a feature to show a list of projects associated with Becht to the clients in our application "Oracle From Becht"</li>
+                        <li>Designed an API to fetch all the data from Database using C#, ASP.NET MVC Controllers</li>
+                        <li>Designed a User Interface using Kendo UI components.</li>
+                        <li>Utilized JavaScript and jQuery for REST API calls</li>
+                        <li>Working on creating an Excel Add-in to create an User Interface Form using C#</li>
+                    </ul>
+                </div>
                 </div>
             </div>
         </div>
@@ -84,7 +94,7 @@
             <div class="row">
             <div class="jumbotron container col-xs-12 col-sm-12 col-md-8 col-lg-10">
                 <h4 class="text-primary text-center">Skills</h4>
-                <p>Programming: Java, C#, SQL</p>
+                <p>Programming: Java, C#, SQL, C/C++</p>
                 <p>Web Dev: HTML/CSS, Javascript, Node.js, Express, ASP.Net MVC, REST API</p>
                 <p>Databases: MS SQL Server, MySql, Oracle</p>
                 <p>Developer tools: Eclipse, Visual Studio 2019, VS Code, Atom</p>
@@ -94,38 +104,46 @@
             </div>
     </section>
 
-    <section id="contact" class="contact">
-	<div class="d-flex justify-content-center align-items-center">
-		<div class="jumbotron my-auto">
-            <h4 class="text-primary text-center">Contact Me</h4>
-		     <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="vsmohan4">
-			<a class="LI-simple-link" href='https://www.linkedin.com/in/vsmohan4?trk=profile-badge'>
-			Mohan Vallivedu Sudhakar</a>
-			</div>
-		</div>
-	</div>
+    <section id="resume" class="resume">
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="jumbotron">
+                <h4 class="text-primary text-center">Resume</h4>
+                <div style="display: inline-block;">
+                <a target='_blank' class="container justify-content-center align-items-center" href="https://drive.google.com/file/d/1MhB1B8pOAjwN7kIi58iuQQiRz0dvQ6xY/view?usp=sharing">
+                     <i class="fa fa-file-pdf-o" aria-hidden="true" width="40%" height="40%"></i>
+                </a>
+                </div>
+            </div>
+        </div>
     </section>
- <div>
-        <button onclick="topFunction()" class="btn btn-primary btn-lg back-to-to" id="btnTop" title="Go to top">^</button>
-    </div>
-<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-   
-	<script>
-        mybutton = document.getElementById("btnTop");
-        window.onscroll = function() {scrollFunction()};
-        function scrollFunction()
-        {
-            if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-        function topFunction()
-        {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
+
+    <section id="contact" class="contact">
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="jumbotron">
+                <h4 class="text-primary text-center">Contact</h4>
+                <div style="display:inline-block">
+                <a target='_blank' id="github" class="container justify-content-center align-items-center" href="https://github.com/MohanVallivedu">
+                     <i class="fa fa-github" aria-hidden="true" width="40%" height="40%"></i>
+                </a>
+                </div>
+                <div style="display:inline-block">
+                <a target='_blank' id="linkedin" class="container justify-content-center align-items-center" href="https://www.linkedin.com/in/vsmohan4/">
+                    <i class="fa fa-linkedin-square" aria-hidden="true" width="40%" height="40%"></i>
+               </a>
+                </div>
+                <div style="display:inline-block">
+               <a target='_blank' id="gmail" class="container justify-content-center align-items-center" href="mailto: vsmohan4@gmail.com" rel="noopener noreferrer">
+                <i class="fa fa-envelope-o" aria-hidden="true" width="40%" height="40%" data-toggle="tooltip" data-placement="bottom" title="vsmohan4@gmail.com"></i>
+               </a>
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            Copyright &copy; Mohan - 2020
+        </div>
+    </footer>
 </body>
 </html>
