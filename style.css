@@ -1,3 +1,9 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    
+}
 html{
     scroll-behavior: smooth;
 }
@@ -7,26 +13,68 @@ body{
     backdrop-filter: blur(1);
     backdrop-filter: contrast(50%);
     backdrop-filter: brightness(50%);
+    font-family:'Poppins',sans-serif ;
+    letter-spacing: 0.5px;
+}
+h4{
+    letter-spacing: 2px;
 }
 #items{
     font-size: 100%;
     color: black;
     font-display: block;
     font-weight: bold;
+    letter-spacing: 1.8px;
+    justify-content: space-around;
+    width: 50%;
 }
-#btnTop {
-    display: none;
-    position: fixed;
-    bottom: 28px;
-    right: 35px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color:gray;
+@media(max-width:1024px){
+    #items{
+        justify-content: space-around;
+        width:80%;
+    }
+}
+@media(max-width:768px){
+    #items{
+        justify-content: space-around;
+        width:40%;
+    }
+}
+#resume{
+    display: block;
+}
+#resume a{
+    text-align: center;
+    font-size: 5em;
+    color:rgb(238, 118, 148);
+}
+#resume a:hover{
+    color:rgb(235, 81, 81);
+}
+
+#contact{
+    display: block;
+}
+#contact a{
+    text-align: center;
+    font-size: 5em;
+}
+#linkedin{
+    color:rgb(80, 147, 235);
+}
+#github{
+    color:black;
+}
+#gmail{
+    color:rgb(235, 35, 35);
+}
+
+#about li{
+    margin-left: 45px;
+}
+
+.footer{
+    text-align: center;
+    font-size: .9em;
     color: white;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 15;
-    font-size: 18px;
-    opacity: 8;
 }
