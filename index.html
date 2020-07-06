@@ -16,7 +16,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
     <link rel="manifest" href="Images/site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0\font-awesome-4.7.0\css\font-awesome.min.css">
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 
@@ -26,16 +26,30 @@
 	    <div class="container">
             <a href="#" class="navbar-brand"><img src="Images/logo.png" width="45%"></a>
             <div class="navbar-header">
-                <button type="button" style="margin-left:12em;" class="btn btn-block" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-
+            <div class="collapse navbar-collapse" id="navbarMenu" style="justify-content: space-around;">
+                <ul class="nav navbar-nav ml-auto" id="items">
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
   </header>
 
-  <div class="info" style="">
     <section id="about" class="about" >
         <div class="container">
             <div class="row">
@@ -125,29 +139,11 @@
             </div>
         </div>
     </section>
-    <footer>
-          <div class="footer">
-              Copyright &copy; Mohan - 2020
-          </div>
-    </footer>
-  </div>
 
-  <div class="links">
-      <ul class="list-group list-group-flush" id="items">
-          <li class="list-group-item">
-              <a href="#about" class="nav-link">About</a>
-          </li>
-          <li class="list-group-item">
-              <a href="#skills" class="nav-link">Skills</a>
-          </li>
-          <li class="list-group-item">
-              <a href="#resume" class="nav-link">Resume</a>
-          </li>
-          <li class="list-group-item">
-              <a href="#contact" class="nav-link">Contact</a>
-          </li>
-      </ul>
-  </div>
-  <script src="js/effects.js"></script>
+    <footer>
+        <div class="footer">
+            Copyright &copy; Mohan - 2020
+        </div>
+    </footer>
 </body>
 </html>
