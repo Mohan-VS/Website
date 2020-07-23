@@ -1,80 +1,124 @@
-*{
-    margin:0px;
-    padding:0px;
-    box-sizing: border-box;
-    
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    font-family: sans-serif;
-    background-image: url('https://techcrunch.com/wp-content/uploads/2016/06/softwareworld.jpg');
-    backdrop-filter: blur(1);
-    backdrop-filter: contrast(50%);
-    backdrop-filter: brightness(50%);
-    font-family:'Poppins',sans-serif ;
-    letter-spacing: 0.5px;
+body {
+  font-family: sans-serif;
+  background-image: url("https://techcrunch.com/wp-content/uploads/2016/06/softwareworld.jpg");
+  backdrop-filter: blur(1);
+  backdrop-filter: contrast(50%);
+  backdrop-filter: brightness(50%);
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
 }
-h4{
-    letter-spacing: 2px;
+h4 {
+  letter-spacing: 2px;
 }
-#items{
-    font-size: 100%;
-    color: black;
-    font-display: block;
-    font-weight: bold;
-    letter-spacing: 1.8px;
+#items {
+  font-size: 100%;
+  color: black;
+  font-display: block;
+  font-weight: bold;
+  letter-spacing: 1.8px;
+  justify-content: space-around;
+}
+
+#resume {
+  display: block;
+}
+#resume a {
+  text-align: center;
+  font-size: 5em;
+  color: rgb(238, 118, 148);
+}
+#resume a:hover {
+  color: rgb(235, 81, 81);
+}
+
+#contact {
+  display: block;
+}
+#contact a {
+  text-align: center;
+  font-size: 5em;
+}
+#linkedin {
+  color: rgb(80, 147, 235);
+}
+#github {
+  color: black;
+}
+#gmail {
+  color: rgb(235, 35, 35);
+}
+
+#about li {
+  margin-left: 45px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: white;
+}
+
+.mycontainer {
+  background-color: #e3f2fd;
+  margin: 0 auto;
+  width: 1200px;
+  margin-top: 1rem;
+}
+.heading {
+  display: grid;
+  text-align: center;
+  align-content: center;
+  min-height: 10em;
+}
+.heading3 {
+  margin-left: 20px;
+}
+.icons-section {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 15px;
+}
+@media screen and (max-width: 1200px) {
+  .mycontainer {
+    width: 90%;
+  }
+  .icons-section {
+    width: 100%;
+  }
+  #items {
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #items {
     justify-content: space-around;
     width: 50%;
-}
-@media(max-width:1024px){
-    #items{
-        justify-content: space-around;
-        width:50%;
-    }
-}
-@media(max-width:768px){
-    #items{
-        justify-content: space-around;
-        width:40%;
-    }
-}
-#resume{
-    display: block;
-}
-#resume a{
-    text-align: center;
-    font-size: 5em;
-    color:rgb(238, 118, 148);
-}
-#resume a:hover{
-    color:rgb(235, 81, 81);
+  }
 }
 
-#contact{
-    display: block;
-}
-#contact a{
-    text-align: center;
-    font-size: 5em;
-}
-#linkedin{
-    color:rgb(80, 147, 235);
-}
-#github{
-    color:black;
-}
-#gmail{
-    color:rgb(235, 35, 35);
+h2{
+  animation: color-change 2.5s infinite;
 }
 
-#about li{
-    margin-left: 45px;
-}
-
-.footer{
-    text-align: center;
-    font-size: .9em;
-    color: white;
+@keyframes color-change {
+  0% {
+    color: black;
+  }
+  50% {
+    color: rgb(133, 200, 231);
+  }
+  70%{
+      color:rgb(235, 173, 236)
+  }
 }
